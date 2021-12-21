@@ -8,3 +8,18 @@
     align-self: flex-start;
     margin-right: 8px;
 }
+
+
+.profileletters {
+    display:inline-block;
+    font-size:.9em;
+    width:2.3em;
+    height:2.3em;
+    line-height:2.3em;
+    text-align:center;
+    border-radius:50%;
+    background:#6666ff;
+    vertical-align:middle;
+    margin-right:1em;
+    color:white;
+}
