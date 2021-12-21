@@ -42,6 +42,7 @@ const Message = (props) => {
           {props.message.author === 'them' && _renderIcon(props.message.is_chatbot)}
           {_renderMessageOfType(props.message.type)}
         </div>
+        <span className={`sc-message-date-${props.message.author === 'me' ? 'sent' : 'received'}`}>{props.message.date? props.message.date: ""}</span>
       </div>
   )
 }
