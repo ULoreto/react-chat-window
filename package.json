@@ -1,6 +1,6 @@
 {
   "name": "@uloreto/react-chat-window",
-  "version": "1.4.4",
+  "version": "1.4.5",
   "description": "react-chat-window React component",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -46,7 +46,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Wealize/react-chat-window"
+    "url": "git+https://github.com/uloreto/react-chat-window.git"
   },
   "keywords": [
     "react-component"
@@ -56,5 +56,6 @@
   },
   "directories": {
     "lib": "lib"
-  }
+  },
+  "homepage": "https://github.com/uloreto/react-chat-window#readme"
 }
