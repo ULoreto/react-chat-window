@@ -1,10 +1,9 @@
-# @wealize/react-chat-window
+# @uloreto/react-chat-window
 
-`@wealize/react-chat-window` provides an intercom-like chat window that can be included easily in any project for free. It provides no messaging facilities, only the view component.
+`@uloreto/react-chat-window` provides an intercom-like chat window that can be included easily in any project for free. It provides no messaging facilities, only the view component.
 
 ![Version](https://img.shields.io/badge/version-1.4.4-blue)
-<a href="https://www.npmjs.com/package/@wealize/react-chat-window" target="\_parent">
-  <img alt="" src="https://img.shields.io/npm/dm/@wealize/react-chat-window" />
+<a href="https://www.npmjs.com/package/@uloreto/react-chat-window" target="\_parent">
 </a>
 <br/>
 
@@ -17,15 +16,15 @@
 ## Installation
 
 ```
-$ npm install @wealize/react-chat-window
-$ yarn add @wealize/react-chat-window
+$ npm install @uloreto/react-chat-window
+$ yarn add @uloreto/react-chat-window
 ```
 
 ## Example
 
 ``` javascript
 import React, { Component } from 'react'
-import { Launcher } from '@wealize/react-chat-window'
+import { Launcher } from '@uloreto/react-chat-window'
 
 class Demo extends Component {
   constructor() {
@@ -144,8 +143,7 @@ Launcher props:
 ## Objects
 
 ### Message Objects
-
-Message objects are rendered differently depending on their type. Currently, only text, file, emoji, image, video and audio types are supported. Each message object has an `author` field which can have the value 'me' or 'them'.
+Se agrega fecha de mensaje y letras iniciales del chatbot
 
 ``` javascript
 {
@@ -154,7 +152,9 @@ Message objects are rendered differently depending on their type. Currently, onl
   is_chatbot: true,
   data: {
     text: 'some text'
-  }
+  },
+  letters: "UL",
+  date: "2021/12/21 15:20"
 }
 
 {
@@ -164,6 +164,8 @@ Message objects are rendered differently depending on their type. Currently, onl
   data: {
     code: 'someCode'
   }
+  letters: "UL",
+  date: "2021/12/21 15:26"
 }
 
 {
@@ -174,6 +176,8 @@ Message objects are rendered differently depending on their type. Currently, onl
     url: 'somefile.mp3',
     fileName: 'Any old name'
   }
+  letters: "UL",
+  date: "2021/12/21 15:27"
 }
 
 {
@@ -183,6 +187,8 @@ Message objects are rendered differently depending on their type. Currently, onl
   data: {
     url: 'somefile.jpg'
   }
+  letters: "UL",
+  date: "2021/12/21 15:28"
 }
 
 {
@@ -192,6 +198,8 @@ Message objects are rendered differently depending on their type. Currently, onl
   data: {
     url: 'somefile.mp3',
   }
+  letters: "UL",
+  date: "2021/12/21 15:30"
 }
 
 {
@@ -201,6 +209,8 @@ Message objects are rendered differently depending on their type. Currently, onl
   data: {
     url: 'somefile.mp4',
   }
+  letters: "UL",
+  date: "2021/12/21 15:48"
 }
 
 {
@@ -222,6 +232,8 @@ Message objects are rendered differently depending on their type. Currently, onl
       data: { emoji: '🤓' }
     }
   ]
+  letters: "UL",
+  date: "2021/12/21 18:20"
 }
 
 
