@@ -31,15 +31,15 @@ const Message = (props) => {
     }
   }
 
-  const _renderIcon = (is_chatbot) => {
+  const _renderIcon = (is_chatbot, letters) => {
     // className="sc-message--avatar"
-    return is_chatbot ? <ChatbotIcon /> : <StaffIcon />
+    return is_chatbot ? <ChatbotIcon letters={letters}/> : <StaffIcon />
   }
 
   return (
       <div className="sc-message" id={`message-${props.messageId}`}>
         <div className={`sc-message--content ${props.message.author === 'me' ? 'sent' : 'received'}`}>
-          {props.message.author === 'them' && _renderIcon(props.message.is_chatbot)}
+          {props.message.author === 'them' && _renderIcon(props.message.is_chatbot, props.message.letters? props.message.letters: "")}
           {_renderMessageOfType(props.message.type)}
         </div>
         <span className={`sc-message-date-${props.message.author === 'me' ? 'sent' : 'received'}`}>{props.message.date? props.message.date: ""}</span>
